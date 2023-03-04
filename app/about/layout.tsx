@@ -1,3 +1,10 @@
+import styles from './styles.module.css';
+
+export const metadata = {
+  title: 'About Page',
+  description: "This is a tutorial from Dave Gray's Youtube page",
+};
+
 export default function AboutLayout({
   children,
 }: {
@@ -6,7 +13,7 @@ export default function AboutLayout({
   return (
     <>
       <nav>About NavBar</nav>
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
     </>
   );
 }
